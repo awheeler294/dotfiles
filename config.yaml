@@ -3,9 +3,6 @@ config:
   create: true
   dotpath: dotfiles
 dotfiles:
-  d_atom:
-    dst: ~/.atom
-    src: atom
   d_colorschemes:
     dst: ~/.local/share/xfce4/terminal/colorschemes
     src: local/share/xfce4/terminal/colorschemes
@@ -43,7 +40,6 @@ profiles:
   base:
   - d_colorschemes
   - d_terminal
-  - d_atom
   - f_bashrc
   - f_micro_bindings.json
   - f_micro_settings.json
