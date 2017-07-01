@@ -1,0 +1,61 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  d_atom:
+    dst: ~/.atom
+    src: atom
+  d_colorschemes:
+    dst: ~/.local/share/xfce4/terminal/colorschemes
+    src: local/share/xfce4/terminal/colorschemes
+  d_i3:
+    dst: ~/.i3
+    src: i3
+  d_i3status:
+    dst: ~/.config/i3status
+    src: config/i3status
+  d_panel:
+    dst: ~/.config/xfce4/panel
+    src: xfce4panel/config/xfce4/panel
+  d_polybar:
+    dst: ~/.config/polybar
+    src: config/polybar
+  d_terminal:
+    dst: ~/.config/xfce4/terminal
+    src: config/xfce4/terminal
+  d_xfconf:
+    dst: ~/.config/xfce4/xfconf
+    src: xfce4panel/config/xfce4/xfconf
+  f_bashrc:
+    dst: ~/.bashrc
+    src: bashrc
+  f_i3config:
+    dst: ~/.i3/config
+    src: i3/config
+  f_micro_bindings.json:
+    dst: ~/.config/micro/bindings.json
+    src: config/micro/bindings.json
+  f_micro_settings.json:
+    dst: ~/.config/micro/settings.json
+    src: config/micro/settings.json
+profiles:
+  base:
+  - d_colorschemes
+  - d_terminal
+  - d_atom
+  - f_bashrc
+  - f_micro_bindings.json
+  - f_micro_settings.json
+  i3:
+  - d_i3
+  i3status:
+  - f_i3config
+  - d_i3status
+  polybar:
+  - f_i3config
+  - d_polybar
+  xfce-panel:
+  - f_i3config
+  - d_panel
+  - d_xfconf

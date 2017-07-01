@@ -1,0 +1,24 @@
+#!/bin/python
+
+import urllib.request, json
+
+#city = "Insert Your City"
+#api_key = "Insert Your API Key"
+#units = "Insert your units (Default: Kelvin, Options: Metric, Imperial"
+#unit_key = "Insert your Unit Key(K, C, F)"
+
+city = "Provo, US"
+api_key = "5e1a669969f6dca8ae49d41652651e9e"
+units = "Imperial"
+unit_key = "F"
+
+#print(str(urllib.request.urlopen("http://api.openweathermap.org/data/2.5/weather?q={}&APPID={}&units={}".format(city, api_key, units)).read()))
+
+weather = json.loads(str(urllib.request.urlopen("http://api.openweathermap.org/data/2.5/weather?q={}&APPID={}&units={}".format(city, api_key, units)).read())[2:-1])
+
+#print(weather)
+
+info = weather["weather"][0]["description"].capitalize()
+temp = int(float(weather["main"]["temp"]))
+
+print("%s, %i °%s" % (info, temp, unit_key))

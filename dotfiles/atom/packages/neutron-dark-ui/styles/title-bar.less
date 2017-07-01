@@ -1,0 +1,38 @@
+.title-bar {
+  height: 22px; // remove 1px since there is no border
+  border-bottom: none;
+  background: @title-bar-color;
+  font-size: 12px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 1px 0 0 @level-3-color;
+  -webkit-app-region: drag;
+  .custom-title-bar & {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 1px 0 0 @level-3-color;
+  }
+  .custom-inset-title-bar & {
+    height: @ui-tab-height;
+    position: static;
+    z-index: 0;
+    box-shadow: 0 0 0 0 transparent;
+    background-color: transparent;
+    .title {
+      display: none;
+    }
+  }
+}
+
+// Fake background behind transparent custom inset titlebar in these edge cases
+.custom-inset-title-bar:not(.fullscreen) atom-panel-container.left:empty:after,
+.custom-inset-title-bar:not(.fullscreen) atom-panel-container.left atom-panel.left.tool-panel .tool-bar:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -@ui-tab-height;
+  left: 0;
+  width: 80px;
+  height: @ui-tab-height;
+  background-color: @level-1-color;
+}

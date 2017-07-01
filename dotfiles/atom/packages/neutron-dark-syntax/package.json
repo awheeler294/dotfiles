@@ -1,0 +1,74 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-11748-4974-wfn9r7.mugglxflxr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-11748-4974-wfn9r7.mugglxflxr/package.tgz",
+        "spec": "/tmp/d-11748-4974-wfn9r7.mugglxflxr/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-11748-4974-zd67e9.1w9z035wmi"
+    ]
+  ],
+  "_from": "../d-11748-4974-wfn9r7.mugglxflxr/package.tgz",
+  "_id": "neutron-dark-syntax@1.0.5",
+  "_inCache": true,
+  "_location": "/neutron-dark-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-11748-4974-wfn9r7.mugglxflxr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-11748-4974-wfn9r7.mugglxflxr/package.tgz",
+    "spec": "/tmp/d-11748-4974-wfn9r7.mugglxflxr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11748-4974-wfn9r7.mugglxflxr/package.tgz",
+  "_shasum": "db0e24102aac9514a7d240f82169ce44b46fbce9",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-11748-4974-wfn9r7.mugglxflxr/package.tgz",
+  "_where": "/tmp/apm-install-dir-11748-4974-zd67e9.1w9z035wmi",
+  "bugs": {
+    "url": "https://github.com/acondiff/neutron-dark-syntax/issues"
+  },
+  "dependencies": {},
+  "description": "A dark syntax theme",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/acondiff/neutron-dark-syntax#readme",
+  "keywords": [
+    "dark",
+    "blue",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "neutron-dark-syntax",
+  "optionalDependencies": {},
+  "readme": "## Neutron Dark Syntax theme\n\nThere is also a matching [UI theme](https://atom.io/themes/neutron-dark-ui).\n\n<img width=\"727\" alt=\"screen shot 2017-03-27 at 2 39 13 am\" src=\"https://cloud.githubusercontent.com/assets/806104/24346950/3b237198-129c-11e7-8dc8-f680719d20bc.png\">\n\n### Install\n\nThis theme can be activated by going to the __Settings > Themes__ section and selecting it from the __Syntax Themes__ drop-down menu.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acondiff/neutron-dark-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.0.5",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

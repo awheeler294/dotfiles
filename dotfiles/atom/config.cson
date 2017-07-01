@@ -1,0 +1,23 @@
+"*":
+  "Sublime-Style-Column-Selection": {}
+  "atom-beautify":
+    general:
+      _analyticsUserId: "cd81f6d7-016d-4430-914f-479f5c5d2476"
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    fontSize: 16
+  "exception-reporting":
+    userId: "22c9bdab-a804-4810-ba39-7ac9d521042e"
+  "linter-ui-default":
+    showPanel: true
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  welcome:
+    showOnStartup: false

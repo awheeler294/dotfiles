@@ -1,0 +1,19 @@
+next_color=3
+viewer_size=128
+viewer_text_overlay_position=3
+use_background_color=false
+viewer_type=flame
+viewer_text_overlay_enabled=true
+viewer_text_overlay_color=379618815
+viewer_text_overlay_font=Bitstream Vera Sans 10
+
+[2]
+type=load_average
+mount_dir=/
+show_free=false
+tag=CPU
+color=-1050256720
+fill_color=-524050736
+cpu_no=-1
+max=2.32625
+

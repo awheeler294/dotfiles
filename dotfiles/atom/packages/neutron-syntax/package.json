@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-11748-4958-1mspl86.jb64y7rpb9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-11748-4958-1mspl86.jb64y7rpb9/package.tgz",
+        "spec": "/tmp/d-11748-4958-1mspl86.jb64y7rpb9/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-11748-4958-mrh2no.idiok73nmi"
+    ]
+  ],
+  "_from": "../d-11748-4958-1mspl86.jb64y7rpb9/package.tgz",
+  "_id": "neutron-syntax@0.7.0",
+  "_inCache": true,
+  "_location": "/neutron-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-11748-4958-1mspl86.jb64y7rpb9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-11748-4958-1mspl86.jb64y7rpb9/package.tgz",
+    "spec": "/tmp/d-11748-4958-1mspl86.jb64y7rpb9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11748-4958-1mspl86.jb64y7rpb9/package.tgz",
+  "_shasum": "19f63a964e03a15b9a1ca58ad94155a8e2ad3811",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-11748-4958-1mspl86.jb64y7rpb9/package.tgz",
+  "_where": "/tmp/apm-install-dir-11748-4958-mrh2no.idiok73nmi",
+  "bugs": {
+    "url": "https://github.com/brentd/neutron-syntax/issues"
+  },
+  "dependencies": {},
+  "description": "Syntax theme for the Neutron UI theme",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/brentd/neutron-syntax#readme",
+  "license": "MIT",
+  "name": "neutron-syntax",
+  "optionalDependencies": {},
+  "readme": "# Neutron Syntax Theme for Atom\n\nComplementing syntax theme for the [Neutron UI](http://atom.io/packages/neutron-ui) package.\n\n![Money shot](https://f.cloud.github.com/assets/69169/2317235/17a7ade0-a348-11e3-916d-d991707cce23.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brentd/neutron-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.7.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
