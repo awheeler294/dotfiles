@@ -26,7 +26,7 @@ total = #ADB0D8
 [bar/bar1]
 monitor = ${env:MONITOR:eDP1}
 width = 100%
-height = 3%
+height = 4%
 bottom = false
 ;offset-x = 1%
 ;offset-y = 1%
@@ -45,11 +45,11 @@ border-top-size= 10
 border-bottom-size= 10
 border-color = #00000000
 
-padding-left = 0
-padding-right = 2
+padding-left = 7
+padding-right = 7
 
-module-margin-left = 1
-module-margin-right = 2
+module-margin-left = 4
+module-margin-right = 4
 
 font-0 = Bitstream Vera Sans Roman:pixelsize=16;1
 font-1 = font awesome:fontformat=truetype:size=14:antialias=false;0
@@ -76,14 +76,14 @@ tray-background = ${colors.background-alt}
 ;scroll-down = i3wm-wsprev
 
 
-[bar/bar1.5]
+[bar/bar1-bottom]
 monitor = ${env:MONITOR:eDP1}
 width = 100%
-height = 3%
+height = 4%
 bottom = true
 ;offset-x = 1%
 ;offset-y = 1%
-;radius = 2.0
+radius = 0.0
 fixed-center = false
 
 background = ${colors.background}
@@ -114,34 +114,35 @@ modules-right = memory filesystem
 
 [bar/bar2]
 monitor = ${env:MONITOR:HDMI1}
-width = 100%
-height = 3%
-bottom = false
+width = ${bar/bar1.width}
+height = ${bar/bar1.height}
+bottom = ${bar/bar1.bottom}
+
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 2.0
-fixed-center = false
+radius = ${bar/bar1.radius}
+fixed-center = ${bar/bar1.fixed-center}
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${bar/bar1.background}
+foreground = ${bar/bar1.foreground}
 
-line-size = 3
-line-color = #f00
+line-size = ${bar/bar1.line-size}
+line-color = ${bar/bar1.line-color}
 
-border-left-size= 50
-border-right-size= 50
-border-top-size= 10
-border-bottom-size= 10
-border-color = #00000000
+border-left-size = ${bar/bar1.border-left-size}
+border-right-size = ${bar/bar1.border-right-size}
+border-top-size = ${bar/bar1.border-top-size}
+border-bottom-size = ${bar/bar1.border-bottom-size}
+border-color = ${bar/bar1.border-color}
 
-padding-left = 0
-padding-right = 2
+padding-left = ${bar/bar1.padding-left}
+padding-right = ${bar/bar1.padding-right}
 
-module-margin-left = 1
-module-margin-right = 2
+module-margin-left = ${bar/bar1.module-margin-left}
+module-margin-right = ${bar/bar1.module-margin-right}
 
-font-0 = Bitstream Vera Sans Roman:pixelsize=16;1
-font-1 = font awesome:fontformat=truetype:size=14:antialias=false;0
+font-0 = ${bar/bar1.font-0}
+font-1 = ${bar/bar1.font-1}
 
 modules-left = i3
 modules-center = weather date-verbose
@@ -149,36 +150,37 @@ modules-center = weather date-verbose
 modules-right = temperature battery
 
 
-[bar/bar2.5]
+[bar/bar2-bottom]
 monitor = ${env:MONITOR:HDMI1}
-width = 100%
-height = 3%
-bottom = true
+width = ${bar/bar1-bottom.width}
+height = ${bar/bar1-bottom.height}
+bottom = ${bar/bar1-bottom.bottom}
+
 ;offset-x = 1%
 ;offset-y = 1%
-;radius = 2.0
-fixed-center = false
+radius = ${bar/bar1-bottom.radius}
+fixed-center = ${bar/bar1.fixed-center}
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${bar/bar1-bottom.background}
+foreground = ${bar/bar1-bottom.foreground}
 
-line-size = 3
-line-color = #f00
+line-size = ${bar/bar1-bottom.line-size}
+line-color = ${bar/bar1-bottom.line-color}
 
-border-left-size= 2
-border-right-size= 2
-border-top-size= 2
-border-bottom-size= 2
-border-color = #00000000
+border-left-size = ${bar/bar1-bottom.border-left-size}
+border-right-size = ${bar/bar1-bottom.border-right-size}
+border-top-size = ${bar/bar1-bottom.border-top-size}
+border-bottom-size = ${bar/bar1-bottom.border-bottom-size}
+border-color = ${bar/bar1-bottom.border-color}
 
-padding-left = 7
-padding-right = 7
+padding-left = ${bar/bar1-bottom.padding-left}
+padding-right = ${bar/bar1-bottom.padding-right}
 
-module-margin-left = 4
-module-margin-right = 4
+module-margin-left = ${bar/bar1-bottom.module-margin-left}
+module-margin-right = ${bar/bar1-bottom.module-margin-right}
 
-font-0 = Bitstream Vera Sans Roman:pixelsize=16;1
-font-1 = font awesome:fontformat=truetype:size=14:antialias=false;0
+font-0 = ${bar/bar1-bottom.font-0}
+font-1 = ${bar/bar1-bottom.font-1}
 
 modules-left = wlan
 modules-center = cpu volume
@@ -187,34 +189,36 @@ modules-right = memory filesystem
 
 [bar/bar3]
 monitor = ${env:MONITOR:DP1}
-width = 100%
-height = 3%
-bottom = false
+width = ${bar/bar1.width}
+height = ${bar/bar1.height}
+bottom = ${bar/bar1.bottom}
+
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 2.0
-fixed-center = false
+radius = ${bar/bar1.radius}
+fixed-center = ${bar/bar1.fixed-center}
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${bar/bar1.background}
+foreground = ${bar/bar1.foreground}
 
-line-size = 3
-line-color = #f00
+line-size = ${bar/bar1.line-size}
+line-color = ${bar/bar1.line-color}
 
-border-left-size= 50
-border-right-size= 50
-border-top-size= 10
-border-bottom-size= 10
-border-color = #00000000
+border-left-size = ${bar/bar1.border-left-size}
+border-right-size = ${bar/bar1.border-right-size}
+border-top-size = ${bar/bar1.border-top-size}
+border-bottom-size = ${bar/bar1.border-bottom-size}
+border-color = ${bar/bar1.border-color}
 
-padding-left = 0
-padding-right = 2
+padding-left = ${bar/bar1.padding-left}
+padding-right = ${bar/bar1.padding-right}
 
-module-margin-left = 1
-module-margin-right = 2
+module-margin-left = ${bar/bar1.module-margin-left}
+module-margin-right = ${bar/bar1.module-margin-right}
 
-font-0 = Bitstream Vera Sans Roman:pixelsize=16;1
-font-1 = font awesome:fontformat=truetype:size=14:antialias=false;0
+font-0 = ${bar/bar1.font-0}
+font-1 = ${bar/bar1.font-1}
+
 
 modules-left = i3
 modules-center = weather date-verbose
@@ -223,36 +227,37 @@ modules-center = weather date-verbose
 modules-right = temperature battery
 
 
-[bar/bar3.5]
+[bar/bar3-bottom]
 monitor = ${env:MONITOR:DP1}
-width = 100%
-height = 3%
-bottom = true
+width = ${bar/bar1-bottom.width}
+height = ${bar/bar1-bottom.height}
+bottom = ${bar/bar1-bottom.bottom}
+
 ;offset-x = 1%
 ;offset-y = 1%
-;radius = 2.0
-fixed-center = false
+radius = ${bar/bar1-bottom.radius}
+fixed-center = ${bar/bar1.fixed-center}
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${bar/bar1-bottom.background}
+foreground = ${bar/bar1-bottom.foreground}
 
-line-size = 3
-line-color = #f00
+line-size = ${bar/bar1-bottom.line-size}
+line-color = ${bar/bar1-bottom.line-color}
 
-border-left-size= 2
-border-right-size= 2
-border-top-size= 2
-border-bottom-size= 2
-border-color = #00000000
+border-left-size = ${bar/bar1-bottom.border-left-size}
+border-right-size = ${bar/bar1-bottom.border-right-size}
+border-top-size = ${bar/bar1-bottom.border-top-size}
+border-bottom-size = ${bar/bar1-bottom.border-bottom-size}
+border-color = ${bar/bar1-bottom.border-color}
 
-padding-left = 7
-padding-right = 7
+padding-left = ${bar/bar1-bottom.padding-left}
+padding-right = ${bar/bar1-bottom.padding-right}
 
-module-margin-left = 4
-module-margin-right = 4
+module-margin-left = ${bar/bar1-bottom.module-margin-left}
+module-margin-right = ${bar/bar1-bottom.module-margin-right}
 
-font-0 = Bitstream Vera Sans Roman:pixelsize=16;1
-font-1 = font awesome:fontformat=truetype:size=14:antialias=false;0
+font-0 = ${bar/bar1-bottom.font-0}
+font-1 = ${bar/bar1-bottom.font-1}
 
 modules-left = wlan
 modules-center = cpu volume
