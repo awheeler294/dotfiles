@@ -26,7 +26,7 @@ total = #ADB0D8
 [bar/bar1]
 monitor = ${env:MONITOR:eDP1}
 width = 100%
-height = 4%
+height = 37
 bottom = false
 ;offset-x = 1%
 ;offset-y = 1%
@@ -79,7 +79,7 @@ tray-background = ${colors.background-alt}
 [bar/bar1-bottom]
 monitor = ${env:MONITOR:eDP1}
 width = 100%
-height = 4%
+height = 37
 bottom = true
 ;offset-x = 1%
 ;offset-y = 1%
