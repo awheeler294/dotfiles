@@ -57,7 +57,7 @@ font-1 = font awesome:fontformat=truetype:size=14:antialias=false;0
 modules-left = i3
 modules-center = weather datetime
 ;modules-right = wlan cpu memory-compact filesystem-compact volume temperature battery
-modules-right = temperature battery
+modules-right = temperature battery xkeyboard-capslock xkeyboard-numlock
 
 tray-position = right
 tray-padding = 2
@@ -272,15 +272,50 @@ label = %title:0:30:...%
 
 [module/xkeyboard]
 type = internal/xkeyboard
-blacklist-0 = num lock
+blacklist-0 = scroll lock
 
 format-prefix = " "
+format = <label-indicator>
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
 
 label-layout = %layout%
 label-layout-underline = ${colors.secondary}
 
+label-indicator = %name%
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+label-indicator-underline = ${colors.secondary}
+
+
+[module/xkeyboard-numlock]
+type = internal/xkeyboard
+blacklist-0 = scroll lock
+blacklist-1 = caps lock
+
+format = <label-indicator>
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-underline = ${colors.primary}
+
+label-indicator = %name%
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.primary}
+label-indicator-underline = ${colors.primary}
+
+
+[module/xkeyboard-capslock]
+type = internal/xkeyboard
+blacklist-0 = scroll lock
+blacklist-1 = num lock
+
+format-prefix =
+format = <label-indicator>
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-underline = ${colors.secondary}
+
+label-indicator = %name%
 label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
