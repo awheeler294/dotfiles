@@ -523,7 +523,7 @@ format-connected = <label-connected>
 label-connected =  %downspeed:6:6%  %upspeed:6%
 
 format-disconnected = <label-disconnected>
-label-disconnected = 
+label-disconnected = "  "
 label-disconnected-foreground = ${colors.foreground-alt}
 
 
