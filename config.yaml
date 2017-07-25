@@ -40,8 +40,6 @@ dotfiles:
     dst: ~/.config/micro/settings.json
     src: config/micro/settings.json
 profiles:
-  andrew-manny-exp:
-  - f_compton.conf
   base:
   - d_colorschemes
   - d_terminal
