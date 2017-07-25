@@ -2,10 +2,10 @@
 for_window [class="^.*"] border pixel 2
 
 # Gaps
-gaps inner 2
-gaps outer 0
-smart_gaps on
-smart_borders on
+gaps inner 4
+gaps outer 4
+#smart_gaps on
+smart_borders no_gaps
 
 set $black       #212121
 set $darkblack   #000000
@@ -55,7 +55,7 @@ bindsym $mod+F4 exec pamac-manager
 bindsym $mod+F5 exec pcmanfm
 bindsym $mod+F6 exec --no-startup-id /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/steam --file-forwarding com.valvesoftware.Steam @@u %U @@
 bindsym $mod+t exec --no-startup-id pkill compton
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b
+bindsym $mod+Ctrl+t exec --no-startup-id compton -b --respect-prop-shadow
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 #navigate workspaces next / previous
@@ -400,7 +400,7 @@ for_window [class="Xfburn"] floating enable
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+exec --no-startup-id nitrogen --restore; sleep 1; compton -b --respect-prop-shadow
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
