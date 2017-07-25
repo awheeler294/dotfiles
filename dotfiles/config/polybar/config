@@ -92,10 +92,10 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-left-size= 2
-border-right-size= 2
-border-top-size= 2
-border-bottom-size= 2
+border-left-size= 5
+border-right-size= 5
+border-top-size= 5
+border-bottom-size= 5
 border-color = #00000000
 
 padding-left = 7

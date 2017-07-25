@@ -27,6 +27,9 @@ dotfiles:
   f_bashrc:
     dst: ~/.bashrc
     src: bashrc
+  f_compton.conf:
+    dst: ~/.config/compton.conf
+    src: config/compton.conf
   f_i3config:
     dst: ~/.i3/config
     src: i3/config
@@ -37,6 +40,8 @@ dotfiles:
     dst: ~/.config/micro/settings.json
     src: config/micro/settings.json
 profiles:
+  andrew-manny-exp:
+  - f_compton.conf
   base:
   - d_colorschemes
   - d_terminal
@@ -50,6 +55,7 @@ profiles:
   - d_i3status
   polybar:
   - f_i3config
+  - f_compton.conf
   - d_polybar
   xfce-panel:
   - f_i3config
